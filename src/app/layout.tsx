@@ -14,7 +14,7 @@ import { getLocale, getMessages, getTranslations } from 'next-intl/server';
 import { Providers } from "./Provider";
 
 import "@/styles/globals.css";
-import { ClarityAnalytics, GoogleAnalytics, PlausibleAnalytics, UmamiAnalytics } from '@/components/Analytics';
+import { ClarityAnalytics, GoogleAnalytics, PlausibleAnalytics } from '@/components/Analytics';
 import FullLoading from '@/components/FullLoading'; // 全局 Loading
 import { INTL_LOCALES } from '@/enums';
 import pkg from "#/package.json";
@@ -99,8 +99,6 @@ export default async function RootLayout({
           rel="stylesheet"
           href="https://cdn.baiwumm.com/fonts/MapleMono-CN-Regular/result.css"
         />
-        {/* umami - 站点统计分析 */}
-        <UmamiAnalytics />
         {/* Microsoft Clarity 统计代码 */}
         <ClarityAnalytics />
         {/* Google 统计 */}

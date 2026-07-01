@@ -2,23 +2,13 @@
  * @Author: 白雾茫茫丶<baiwumm.com>
  * @Date: 2025-11-17 13:59:38
  * @LastEditors: 白雾茫茫丶<baiwumm.com>
- * @LastEditTime: 2025-11-17 14:28:43
+ * @LastEditTime: 2026-07-01 16:57:03
  * @Description: 统计代码
  */
 "use client"
 import clarity from "@microsoft/clarity";
 import Script from 'next/script';
 import { useEffect } from 'react';
-
-/**
- * @description: Umami 统计代码
- */
-export const UmamiAnalytics = () => {
-  return process.env.NEXT_PUBLIC_UMAMI_ID && process.env.NODE_ENV === 'production' ? (
-    <Script src="https://um.baiwumm.com/script.js" data-website-id={process.env.NEXT_PUBLIC_UMAMI_ID} />
-  ) : null;
-};
-
 
 /**
  * @description: Plausible 统计代码
